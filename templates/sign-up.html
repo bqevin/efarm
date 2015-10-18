@@ -1,0 +1,65 @@
+<ion-tabs class="tabs-positive tabs-icon-only">
+    <ion-tab title="As a Farmer">
+        <ion-content style="margin-top:64px;padding: 0 16px;">
+            <h4>Sign up as a farmer</h4>
+            <form novalidate="true">
+                <div class="list">
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Farmer's names</span>
+                        <input type="text" ng-model="farmer.names">
+                    </label>
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Mobile phone</span>
+                        <input type="text" ng-model="farmer.phone">
+                    </label>
+                    <h5 style="margin-left: 16px;">Create a farmer group</h5>
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Group name</span>
+                        <input type="text"  ng-model="farmer.group">
+                    </label>
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Location</span>
+                        <input type="text"  ng-model="farmer.location">
+                    </label>
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Password</span>
+                        <input type="password"  ng-model="farmer.password">
+                    </label>
+                    <div class="button-bar">
+                        <a class="button" ng-click="registerFarmer()">Sign Up</a>
+                        <a class="button" ui-sref="start">Login</a>
+                    </div>
+                </div>
+            </form>
+        </ion-content>
+    </ion-tab>
+    <ion-tab title="As a Buyer">
+        <ion-content style="margin-top:64px;padding: 0 16px;">
+            <h4>Sign up as a buyer</h4>
+            <form>
+                <div class="list">
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Names</span>
+                        <input type="text" ng-model="buyer.names">
+                    </label>
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Mobile phone</span>
+                        <input type="text" ng-model="buyer.phone">
+                    </label>
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label" >Organization</span>
+                        <input type="text" ng-model="buyer.org">
+                    </label>
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Password</span>
+                        <input type="password" ng-model="buyer.password">
+                    </label>
+                    <div class="button-bar">
+                        <a class="button" ng-click="registerBuyer()">Sign Up</a>
+                        <a class="button" ui-sref="start">Login</a>
+                    </div>
+                </div>
+            </form>
+        </ion-content>
+    </ion-tab>
+</ion-tabs>

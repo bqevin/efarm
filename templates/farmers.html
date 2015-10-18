@@ -1,0 +1,9 @@
+<ion-view view-title="Farmers">
+    <ion-content>
+        <ion-list>
+            <ion-item ng-repeat ="farmer in getFarmers()">
+               {{farmer.names}} - {{farmer.phone}}
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
